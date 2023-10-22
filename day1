@@ -55,11 +55,11 @@ def main():
     if action == "1":
         message = input("Введите сообщение для шифрования: ")
         encrypted_message = encrypt(message, file_key)
-        print("Encrypted:", encrypted_message)
+        print("...", encrypted_message)
     elif action == "2":
         encrypted_message = input("Введите зашифрованное сообщение: ")
         decrypted_message = decrypt(encrypted_message, file_key)
-        print("Decrypted:", decrypted_message)
+        print("Encrypted: ", decrypted_message)
     else:
         print("Неверный выбор!")
 
